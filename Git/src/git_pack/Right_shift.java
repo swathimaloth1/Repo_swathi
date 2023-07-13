@@ -19,7 +19,9 @@ public class Right_shift {
 				arr[i+1]=arr[i];
 			}
 		arr[0]=temp;
-		System.out.println("The array after right shift     is");
+
+		System.out.println("The array after right shift is");
+
 		for(int i=0;i<length;i++)
 		{
 			System.out.print(arr[i]+" ");
