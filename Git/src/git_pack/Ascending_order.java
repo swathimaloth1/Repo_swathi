@@ -5,7 +5,7 @@ public class Ascending_order {
 	public static void main(String[] args) {
 		
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Enter the length of the array                   is:");
+		System.out.println("Enter the length of the array is:");
 		int n= sc.nextInt();
 		int temp;
 	    int arr[]=new int [n];
