@@ -1,6 +1,6 @@
 package git_pack;
 import java.util.Scanner;
-public class Print_dip_ele {
+public class Print_dup_ele {
 	
 	public static void main(String[] args) {
 		
