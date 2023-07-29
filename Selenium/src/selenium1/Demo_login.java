@@ -19,7 +19,7 @@ public class Demo_login {
 		ele.click();
 		Thread.sleep(2000);
 		
-		By by_username = By.xpath("//input[@autocomplete='username']");
+		By by_username = By.xpath("//input[@autocomplete='username']"); 
 		WebElement ele1=driver.findElement(by_username);
 		ele1.sendKeys("demo");
 		Thread.sleep(2000);
