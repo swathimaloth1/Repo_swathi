@@ -19,7 +19,7 @@ static String schoolname="newvidhya vihar";
 
 }
   static void change() {
-	 // schoolname="ztoh";
+	  schoolname="ztoh";
   }
 	
 }
