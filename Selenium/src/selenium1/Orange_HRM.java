@@ -39,7 +39,17 @@ public class Orange_HRM {
 	By by_myinfo = By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name' and  text()='My Info']");
 	WebElement ele4=driver.findElement(by_myinfo);
 	ele4.click();
-	//Thread.sleep(3000);
+	Thread.sleep(3000);
+	
+	
+	By by_proname = By.name("firstName");
+	WebElement ele5=driver.findElement(by_proname);
+	ele5.sendKeys("SWATHI");
+	Thread.sleep(2000);
+	
+	
+	
+	//input[@name="firstName"]
 
 }
 }
