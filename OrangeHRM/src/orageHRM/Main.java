@@ -9,15 +9,19 @@ public class Main {
 		l.username();
 		l.password();
 		l.loginbutton();
+		
+		Logout la=new Logout();
+		la.logout();
+		la.logoutbtn();
+		
 //		Login.username();
 //		Login.password();
 //		Login.loginbutton();
-		Thread.sleep(2000);
+	
 		
-		Logout.logoutbtn();
-		Thread.sleep(2000);
 		
-		Logout.logout();
+		
+		
 		
 		
    

@@ -12,18 +12,21 @@ public class Login extends Base{
 	  WebElement by_pw = driver.findElement(by_password);
 	  WebElement bt_login = driver.findElement(by_loginbtn);
 	
-	public  void username()
+	public  void username() throws InterruptedException
 	{
 		by_uname.sendKeys("Admin");
+		Thread.sleep(2000);
 	}
 	
-	public  void password()
+	public  void password() throws InterruptedException
 	{
 		by_pw.sendKeys("admin123");
+		Thread.sleep(2000);
 	}
-	public  void loginbutton()
+	public  void loginbutton() throws InterruptedException
 	{
 		bt_login.click();
+		Thread.sleep(2000);
 	}
 	
 

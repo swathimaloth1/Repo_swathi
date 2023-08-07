@@ -19,7 +19,7 @@ public class Abhi_bus {
      
      By by_to=By.id("destination");
      WebElement to = driver.findElement(by_to);
-     to.sendKeys("Vizag");
+     to.sendKeys("Chennai");
      Thread.sleep(2000);
      
      
