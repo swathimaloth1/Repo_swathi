@@ -1,4 +1,4 @@
-package cyclos;
+package Cyclos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

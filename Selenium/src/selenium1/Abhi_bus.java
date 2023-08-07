@@ -30,9 +30,14 @@ public class Abhi_bus {
      
      
      
-     By by_datebtn=By.xpath("(//a[text()='27'])[1]");
+     By by_datebtn=By.xpath("(//a[text()='1'])[1]");
      WebElement datebtn = driver.findElement(by_datebtn);
      datebtn.click();
+     Thread.sleep(2000);
+     
+     By by_searchbtn=By.xpath("//a[@id='seo_search_btn']");
+     WebElement search = driver.findElement(by_searchbtn);
+     search.click();
      Thread.sleep(2000);
      
  
@@ -47,26 +52,28 @@ public class Abhi_bus {
 //     Thread.sleep(2000);
      
      
-     By by_Train=By.xpath("//a[text()='Trains']");
-     WebElement Trainbtn = driver.findElement(by_Train);
-     Trainbtn.click();
-     Thread.sleep(2000);
-     
-     
-     By by_Tfrom=By.xpath("//span[text()='NDLS  - New Delhi']");
-     WebElement Tfrom = driver.findElement(by_Tfrom);
-     Tfrom.sendKeys("LKO-Lucknow");
-     Thread.sleep(2000);
-     
-     By by_Tto=By.xpath("//span[text()='MMCT  - Mumbai Central']");
-     WebElement Tto = driver.findElement(by_Tto);
-     Tto.sendKeys("Secundrabad");
-     Thread.sleep(2000);
-     
-     By by_Tdatebtn=By.xpath("(//div[@class='label-container'])[3]");
-     WebElement Tdatebtn = driver.findElement(by_Tdatebtn);
-     Tdatebtn.click();
-     Thread.sleep(2000);
+//     By by_Train=By.xpath("//a[text()='Trains']");
+//     WebElement Trainbtn = driver.findElement(by_Train);
+//     Trainbtn.click();
+//     Thread.sleep(2000);
+//     
+//     
+//     By by_Tfrom=By.xpath("//span[text()='NDLS  - New Delhi']");
+//     WebElement Tfrom = driver.findElement(by_Tfrom);
+//     Tfrom.sendKeys("LKO-Lucknow");
+//     Thread.sleep(2000);
+//     
+//     By by_Tto=By.xpath("//span[text()='MMCT  - Mumbai Central']");
+//     WebElement Tto = driver.findElement(by_Tto);
+//     Tto.sendKeys("Secundrabad");
+//     Thread.sleep(2000);
+//     
+//     By by_Tdatebtn=By.xpath("(//div[@class='label-container'])[3]");
+//     WebElement Tdatebtn = driver.findElement(by_Tdatebtn);
+//     Tdatebtn.click();
+//     Thread.sleep(2000);
+//     
+//   
      
 //   By by_date=By.xpath("//a[@class=\"ui-state-default ui-state-active ui-state-hover\"]");
 //   WebElement date = driver.findElement(by_date);
