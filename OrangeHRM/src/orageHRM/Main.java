@@ -18,18 +18,6 @@ public class Main {
 //		Login.password();
 //		Login.loginbutton();
 	
-		
-		
-		
-		
-		
-		
-   
-
-	
-	
-	
-	
-	
+		                                                                                
 }
 }
