@@ -3,7 +3,7 @@ class super1
 {
 	public static final int b = 0;
 	int a=10;
-	public void  super1()
+	public void super1()
 	{
 		int a=10;
 		int b=20;
@@ -43,13 +43,9 @@ class super1
 public class Super_k {
 
 	public static void main(String[] args) {
-		super2 s= new super2();
+		super2 s= new super2();  
 		s.m1();
 	
-	           
-		
-		
-		
-	}
+	  }
 
 }
