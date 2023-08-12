@@ -16,6 +16,7 @@ public class Word_split {
 				count++;
 			}
 		}
+		System.out.println(count);
 		String arr1[] = new String[count];
 		int index=0;
 		String temp=" ";
