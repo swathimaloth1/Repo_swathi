@@ -26,10 +26,14 @@ public class Ascending_order {
 			}
 		}
 		}
+		
+		System.out.println("the larget number is: "+arr[arr.length-1]);
 		for(int i=0;i<n;i++)
 		{
 			System.out.print(arr[i]+" ");
+			
 		}
+		
 	}
 
 }
