@@ -11,7 +11,7 @@ public class Maximum_ele_occerence {
 		int arr[]=new int[length];
 		int count1=0;
 		int count2=0;
-		int count=0;
+		int count=0; 
 		for(int i=0;i<arr.length;i++)
 		{
 		arr[i]=sc.nextInt();
