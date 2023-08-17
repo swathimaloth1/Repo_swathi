@@ -2,7 +2,7 @@ package Cyclos;
 
 import org.openqa.selenium.WebDriver;
 
-public class Base {
-	WebDriver driver;
+public  class Base {
+	 static WebDriver driver;
 
 }
