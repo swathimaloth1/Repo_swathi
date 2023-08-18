@@ -4,26 +4,51 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class Login extends Base {
-	 By by_username=By.xpath("//input[@autocomplete='username']");
-	 By by_password=By.xpath("//input[@autocomplete='password']");
-     By by_loginbtn=By.xpath("//span[text()='Submit']"); 
+	static  By by_username=By.xpath("//input[@autocomplete='username']");
+	 static By by_password=By.xpath("//input[@autocomplete='password']");
+    static  By by_loginbtn=By.xpath("//span[text()='Submit']"); 
 	
-	  WebElement by_uname = driver.findElement(by_username);
-	  WebElement by_pw = driver.findElement(by_password);
-	  WebElement bt_login = driver.findElement(by_loginbtn);
+	 
+	 
+	  
 	
-	public  void username()
+	public static WebElement uname() throws InterruptedException 
+    {
+		Thread.sleep(2000);
+	    WebElement by_uname = driver.findElement(by_username);
+		return by_uname;
+	}
+	public  static void username() throws InterruptedException {
+		uname().sendKeys("demo");
+		}
+	
+	
+	
+	public static WebElement pasword() throws InterruptedException
 	{
-		by_uname.sendKeys("demo");
+		Thread.sleep(3000);
+		WebElement by_passwor = driver.findElement(by_password);
+		return  by_passwor;
+		
+	}
+	public static void password() throws InterruptedException
+	{
+		 
+		pasword().sendKeys("1234");
+		
+	}
+	public static WebElement login() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		WebElement login = driver.findElement(by_loginbtn);
+		return login;
 	}
 	
-	public  void password()
+	public static void loginbutton() throws InterruptedException
 	{
-		by_pw.sendKeys("1234");
-	}
-	public  void loginbutton()
-	{
-		bt_login.click();
+		
+		login().click();
+		Thread.sleep(2000);
 	}
 	
 
