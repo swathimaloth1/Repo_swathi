@@ -29,7 +29,7 @@ public class Homepage extends Base {
 	   System.out.println(handles);
 	   for(String handle : handles)
 	   {
-		  
+		  System.out.println(handle);
 		   if(!handle.equals(parenthandle))
 		   {
 			  driver.switchTo().window(handle) ;
