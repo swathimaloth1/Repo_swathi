@@ -13,6 +13,7 @@ public class Main extends Base{
 	Login_page.password();
 	Login_page.login();
 	
+	Profile_page.frame();
 	Profile_page.profile_page();
 	
 	}
