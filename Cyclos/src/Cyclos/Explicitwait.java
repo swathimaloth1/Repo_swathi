@@ -17,11 +17,12 @@ public class Explicitwait {
 		driver.get("https://demo.cyclos.org/ui/login");
 		driver.manage().window().maximize();
 		
-		WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		
 		
 		By by_username = By.xpath("//input[@autocomplete='username']");
-		w.until(ExpectedConditions.visibilityOfElementLocated(by_username));
+		
+		wait .until(ExpectedConditions.visibilityOfElementLocated(by_username));
 		
 		WebElement uname = driver.findElement(by_username);
 		uname.sendKeys("demo");
