@@ -14,7 +14,7 @@ public class Login extends Base{
 	
 	public  void username()
 	{
-		by_uname.sendKeys("malothuswathi");
+		
 	}
 	
 	public  void password()

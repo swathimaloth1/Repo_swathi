@@ -1,7 +1,11 @@
 package Cyclos;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Login extends Base {
 	static  By by_username=By.xpath("//input[@autocomplete='username']");
@@ -14,7 +18,10 @@ public class Login extends Base {
 	
 	public static WebElement uname() throws InterruptedException 
     {
-		Thread.sleep(2000);
+		WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(30));
+		//Thread.sleep(2000);
+		
+		w.until(ExpectedConditions.visibilityOfElementLocated(by_username));
 	    WebElement by_uname = driver.findElement(by_username);
 		return by_uname;
 	}
@@ -26,7 +33,7 @@ public class Login extends Base {
 	
 	public static WebElement pasword() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		WebElement by_passwor = driver.findElement(by_password);
 		return  by_passwor;
 		
@@ -39,7 +46,7 @@ public class Login extends Base {
 	}
 	public static WebElement login() throws InterruptedException
 	{
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		WebElement login = driver.findElement(by_loginbtn);
 		return login;
 	}
@@ -48,7 +55,7 @@ public class Login extends Base {
 	{
 		
 		login().click();
-		Thread.sleep(2000);
+		
 	}
 	
 
