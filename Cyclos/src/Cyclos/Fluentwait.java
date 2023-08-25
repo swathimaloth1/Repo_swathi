@@ -35,7 +35,8 @@ public class Fluentwait {
 		//wait .until(ExpectedConditions.visibilityOfElementLocated(by_username));
 		//Thread.sleep(3000);
 		WebElement uname = driver.findElement(by_username);
-		FluentWait<WebDriver> wait= new FluentWait<WebDriver>(driver); `	`111111111111111
+		FluentWait<WebDriver> wait= new FluentWait<WebDriver>(driver);
+		
 
 		wait .withTimeout(Duration.ofSeconds(30));
 		wait.pollingEvery(Duration.ofSeconds(5));
