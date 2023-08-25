@@ -8,7 +8,7 @@ static String schoolname="newvidhya vihar";
 	 student_details(String sn,int r){
 		
 		
-		studentname=sn;
+		 studentname=sn;
 		rollno=r;
 		
 		
@@ -27,7 +27,7 @@ static String schoolname="newvidhya vihar";
 
 public class Static_key {
 	public static void main(String[] args) {
-		student_details.change();
+		//student_details.change();
 	
 		 student_details s=new  student_details("swathi",404);
 		 student_details s1=new  student_details("jyothi",304);
