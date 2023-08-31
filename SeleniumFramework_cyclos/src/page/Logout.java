@@ -1,11 +1,12 @@
 package page;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 
-import seleniumutilities.Base;
 
-public class Logout extends Base {
+
+public class Logout extends Basepage {
 static By by_loginbtn = By.xpath("//a[@id='logout-trigger']");
 	
 	public static WebElement logoutbtn() throws InterruptedException
