@@ -14,10 +14,10 @@ public class Remove_last_ele {
 		{
 			arr[i]=sc.nextInt();
 		}
-//		for(int i=0;i<n-1;i++)
-//		{
-//			arr[n-1-i]=arr[n-2-i];
-//		}
+		for(int i=0;i<n-1;i++)
+		{
+			arr[n-1-i]=arr[n-2-i];
+		}
           System.out.println("After removing the last index is");
           for(int i=0;i<n-1;i++)
           {

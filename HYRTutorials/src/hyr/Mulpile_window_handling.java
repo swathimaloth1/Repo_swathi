@@ -15,9 +15,6 @@ public class Mulpile_window_handling {
 		String parenthandle = driver.getWindowHandle();
 		System.out.println("parent window: "+parenthandle);
 
-//		By by_bus=By.id("source");
-//		WebElement ele = driver.findElement(by_bus);
-//	    ele.sendKeys("Hyderabad");
 
 	}
 
