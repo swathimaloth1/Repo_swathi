@@ -18,7 +18,7 @@ public class Left_shift {
 		{
 			arr[i]=arr[i+1];
 		}
-			arr[length-1]=frist;
+			arr[arr.length-1]=frist;
 		
 			System.out.println("array after left rotation");
 			for(int i=0;i<length;i++)

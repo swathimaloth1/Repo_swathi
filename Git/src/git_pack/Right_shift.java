@@ -13,16 +13,16 @@ public class Right_shift {
 		{
 			arr[i]=sc.nextInt();
 		}
-			int temp=arr[length-1];
-			for(int i=length-2;i>=0;i--)
+			int temp=arr[arr.length-1];
+			for(int i=arr.length-1;i>0;i--)
 			{
-				arr[i+1]=arr[i];
+				arr[i]=arr[i-1];
 			}
 		arr[0]=temp;
 
 		System.out.println("The array after right shift is");
 
-		for(int i=0;i<length;i++)
+		for(int i=0;i<arr.length;i++)
 		{
 			System.out.print(arr[i]+" ");
 		}

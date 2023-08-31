@@ -9,11 +9,19 @@ public class Reverse_word_by_word {
 		System.out.println("Enter the sentenance");
 		String str = sc.nextLine();
 		char arr[]=str.toCharArray();
-		String str1=" ";
+		String str1="";
 		for(int i=arr.length-1;i>=0;i--)
 		{
 			str1=str1+arr[i];
 		}
+		
+		//String str2[]=str1.split(" ");
+		//for(int i=str2.length-1;i>0;i--)
+		//{
+		//	System.out.print(str2[i]+" ");
+		//}
+		
+		//System.out.println(str1);
 		char arr1[]=str1.toCharArray();
 		int count=1;
 		for(int i=0;i<arr1.length;i++)
@@ -23,16 +31,16 @@ public class Reverse_word_by_word {
 				count++;
 			}
 		}
-		System.out.println(count);
+		
 		String arr2[] = new String[count];
 		int index=0;
-		String temp=" ";
+		String temp="";
 		for(int i=0;i<arr1.length;i++)
 		{
 			if(arr1[i]==' ')
 			{
 				index++;
-				temp=" ";
+				temp="";
 			}
 			else
 			{
@@ -41,9 +49,10 @@ public class Reverse_word_by_word {
 			}
 		}
 		System.out.println("The final output is: ");
-		for(int i=arr2.length;i>=0;i--)
+		for(int i=arr2.length-1;i>=0;i--)
 		{
-			System.out.println(arr2[i]);
+			System.out.print(arr2[i]+" ");
+			
 		}
 
 	}
