@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class Basepage {
-	static WebDriver driver;
+	protected static WebDriver driver;
 	
 	public static void launch()
 	{
@@ -15,6 +15,10 @@ public class Basepage {
 		
 		
 		
+	}
+	public static void quit()
+	{
+		driver.quit();
 	}
 
 }
