@@ -1,9 +1,10 @@
-package w3School;
+package page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class Login_page extends Base{
+public class Loginpage extends Basepage
+{
 	static By by_username = By.name("email");
 	static By by_password=By.name("current-password");
 	static By by_loginbtn = By.xpath("//button[@class=\"Button_button__URNp+ Button_primary__d2Jt3 Button_fullwidth__0HLEu\"]");
@@ -37,21 +38,20 @@ public class Login_page extends Base{
 	
 	
 	
-	public static void username_action() throws InterruptedException
+	public static void username_action(String username) throws InterruptedException
 	{
-		uname().sendKeys("swathimaloth404@gmail.com");
+		uname().sendKeys(username);
 		
 	}
 	
-	public static void password_action() throws InterruptedException
+	public static void password_action(String password) throws InterruptedException
 	{
-		pass_word().sendKeys("Swathi@11220");
+		pass_word().sendKeys(password);
 	}
 	
 	public static void login_action() throws InterruptedException
 	{
 		submit().click();
 	}
-	
 
 }

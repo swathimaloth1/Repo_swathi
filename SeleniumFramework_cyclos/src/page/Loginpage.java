@@ -2,6 +2,9 @@ package page;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Wait;
+
+import seleniumutilities.Explicitwait;
 public class Loginpage extends Basepage {
 	
 	static  By by_username=By.xpath("//input[@autocomplete='username']");
@@ -11,7 +14,10 @@ public class Loginpage extends Basepage {
 	 
 	 public static WebElement uname() 
    {
+		 Explicitwait.Explicitwait();
 		WebElement by_uname = driver.findElement(by_username);
+	
+		
 		return by_uname;
 	}
 	 
