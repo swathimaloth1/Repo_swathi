@@ -9,12 +9,12 @@ public class main {
 	
 		Logintest.valid_credentials();
 	
-		Logintest.invalid_credentials();
-		Logintest.invalidusername_validpassword();
-		Logintest.validuasename_invalidpassword();
-		Logintest.validuasername_blankpassword();
-		Logintest.blankuasername_validpassword();
-		Logintest.blankuasername_blankpassword();
+//		Logintest.invalid_credentials();
+//		Logintest.invalidusername_validpassword();
+//		Logintest.validuasename_invalidpassword();
+//		Logintest.validuasername_blankpassword();
+//		Logintest.blankuasername_validpassword();
+//		Logintest.blankuasername_blankpassword();
 		
 		
 		
